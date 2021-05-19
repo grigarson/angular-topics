@@ -1,0 +1,7 @@
+.custom-row-direction{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px;
+  border: 1px solid blue;
+}

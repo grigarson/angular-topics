@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParentComponent } from './parent/parent.component';
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Child2Component } from './child2/child2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
