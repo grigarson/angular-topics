@@ -1,4 +1,16 @@
-<div class="custom-row-direction">
-  <app-child1></app-child1>
-  <app-child2></app-child2>
+<div class="custom-column-direction custom-border custom-margin">
+  <div class="custom-row-direction">
+    <div class="custom-column-direction">
+      <div>child1 clicked {{leftCounter}} times</div>
+      <div>Last time you clicked child2 button at: {{child2ButtonClickedAt}}</div>
+    </div>
+    <div class="custom-column-direction">
+      <div>child2 clicked {{rightCounter}} times</div>
+      <div>Last time you clicked child1 button at: {{child1ButtonClickedAt}}</div>
+    </div>
+  </div>
+  <div class="custom-row-direction">
+    <app-child1 class="child1" (emiterFromChild1)="somethingEmitedFromChild1($event)"></app-child1>
+    <app-child2 class="child2" (emiterFromChild2)="somethingEmitedFromChild2($event)"></app-child2>
+  </div>
 </div>

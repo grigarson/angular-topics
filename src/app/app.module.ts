@@ -8,13 +8,15 @@ import { ParentComponent } from './parent/parent.component';
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import {MatButtonModule} from '@angular/material/button';
+import { CustomButtonComponent } from './custom-button/custom-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    CustomButtonComponent
   ],
   imports: [
     BrowserModule,

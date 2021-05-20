@@ -1,7 +1,27 @@
+.custom-column-direction{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.custom-margin{
+  margin: 25px;
+}
+
+.custom-border{
+  border: 1px solid blue;
+}
+
 .custom-row-direction{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 25px;
-  border: 1px solid blue;
+}
+
+.child1{
+  border: 1px solid red;
+}
+
+.child2{
+  border: 1px solid green;
 }
